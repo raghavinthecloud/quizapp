@@ -1,0 +1,18 @@
+.container{padding: 100px 0;}
+
+.sv_qstn div h5{
+    font-size: 20px;
+    padding: 0 0 20px 0 ;
+}
+.btn{
+    height: 55px;
+    width: 125px;
+    white-space: normal;
+}
+.panel-footer{
+    border: none;
+    background-color: #fff;
+}
+.chart{
+    width: 400px;
+}
