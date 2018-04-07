@@ -51,7 +51,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "extraversion",
-     title: "I enjoy working on problems in a team setting rather than by myself.",    
+     title: "I enjoy working on problems myself rather than in a team setting.",    
      isRequired: true,
      rateValues: [
       {
@@ -80,19 +80,19 @@ var surveyJSON = {
       },
       {
        value: 7,
-       text: "Agree Moderately"
+       text: "Agree Strongly"
       }
      ]
     }
     ]
   },
     {
-   name: "quarrelsome",
+   name: "agreeableness",
    elements: [
     {
      type: "rating",
-     name: "quarrelsome_R",
-     title: "I have frequent mood swings",    
+     name: "agreeableness",
+     title: "I don’t easily believe others.",    
      isRequired: true,
      rateValues: [
       {
@@ -121,31 +121,31 @@ var surveyJSON = {
       },
       {
        value: 7,
-       text: "Agree Moderately"
+       text: "Agree Strongly"
       }
      ]
     }
     ]
   },
    {
-   name: "dependable",
+   name: "conscientiousness",
    elements: [
     {
      type: "rating",
-     name: "dependable",
+     name: "conscientiousness",
      title: "I get chores done right away",    
      isRequired: true,
      rateValues: [
       {
-       value: 1,
+       value: 7,
        text: "Disagree Strongly"
       },
       {
-       value: 2,
+       value: 6,
        text: "Disagree Moderately"
       },
       {
-       value: 3,
+       value: 5,
        text: "Disagree a Little"
       },
       {
@@ -153,40 +153,40 @@ var surveyJSON = {
        text: "Neither agree nor disagree"
       },
       {
-       value: 5,
+       value: 3,
        text: "Agree a Little"
       },
       {
-       value: 6,
+       value: 2,
        text: "Agree Moderately"
       },
       {
-       value: 7,
-       text: "Agree Moderately"
+       value: 1,
+       text: "Agree Strongly"
       }
      ]
     }
     ]
   },
   {
-   name: "anxious",
+   name: "neuroticism",
    elements: [
     {
      type: "rating",
-     name: "anxious",
+     name: "neuroticism",
      title: "I have frequent mood swings",    
      isRequired: true,
      rateValues: [
       {
-       value: 1,
+       value: 7,
        text: "Disagree Strongly"
       },
       {
-       value: 2,
+       value: 6,
        text: "Disagree Moderately"
       },
       {
-       value: 3,
+       value: 5,
        text: "Disagree a Little"
       },
       {
@@ -194,16 +194,16 @@ var surveyJSON = {
        text: "Neither agree nor disagree"
       },
       {
-       value: 5,
+       value: 3,
        text: "Agree a Little"
       },
       {
-       value: 6,
+       value: 2,
        text: "Agree Moderately"
       },
       {
-       value: 7,
-       text: "Agree Moderately"
+       value: 1,
+       text: "Agree Strongly"
       }
      ]
     }
@@ -219,15 +219,15 @@ var surveyJSON = {
      isRequired: true,
      rateValues: [
       {
-       value: 1,
+       value: 7,
        text: "Disagree Strongly"
       },
       {
-       value: 2,
+       value: 6,
        text: "Disagree Moderately"
       },
       {
-       value: 3,
+       value: 5,
        text: "Disagree a Little"
       },
       {
@@ -235,27 +235,27 @@ var surveyJSON = {
        text: "Neither agree nor disagree"
       },
       {
-       value: 5,
+       value: 3,
        text: "Agree a Little"
       },
       {
-       value: 6,
+       value: 2,
        text: "Agree Moderately"
       },
       {
-       value: 7,
-       text: "Agree Moderately"
+       value: 1,
+       text: "Agree Strongly"
       }
      ]
     }
     ]
   },
   {
-   name: "calm",
+   name: "extraversion",
    elements: [
     {
      type: "rating",
-     name: "calm_R",
+     name: "extraversion",
      title: "I keep in the background",    
      isRequired: true,
      rateValues: [
@@ -285,31 +285,31 @@ var surveyJSON = {
       },
       {
        value: 7,
-       text: "Agree Moderately"
+       text: "Agree Strongly"
       }
      ]
     }
     ]
   },
     {
-   name: "Sympathetic",
+   name: "agreeableness",
    elements: [
     {
      type: "rating",
-     name: "Sympathetic",
+     name: "agreeableness",
      title: "I am interested in other people’s problems.",    
      isRequired: true,
      rateValues: [
       {
-       value: 1,
+       value: 7,
        text: "Disagree Strongly"
       },
       {
-       value: 2,
+       value: 6,
        text: "Disagree Moderately"
       },
       {
-       value: 3,
+       value: 5,
        text: "Disagree a Little"
       },
       {
@@ -317,27 +317,27 @@ var surveyJSON = {
        text: "Neither agree nor disagree"
       },
       {
-       value: 5,
+       value: 3,
        text: "Agree a Little"
       },
       {
-       value: 6,
+       value: 2,
        text: "Agree Moderately"
       },
       {
-       value: 7,
-       text: "Agree Moderately"
+       value: 1,
+       text: "Agree Strongly"
       }
      ]
     }
     ]
   },
    {
-   name: "careless",
+   name: "conscientiousness",
    elements: [
     {
      type: "rating",
-     name: "careless",
+     name: "conscientiousness",
      title: "I forget to put things back in their proper place",    
      isRequired: true,
      rateValues: [
@@ -367,18 +367,59 @@ var surveyJSON = {
       },
       {
        value: 7,
-       text: "Agree Moderately"
+       text: "Agree Strongly"
       }
      ]
     }
     ]
   },
   {
-   name: "conventional",
+   name: "neuroticism",
    elements: [
     {
      type: "rating",
-     name: "conventional",
+     name: "neuroticism",
+     title: "I am relaxed most of the times.",    
+     isRequired: true,
+     rateValues: [
+      {
+       value: 1,
+       text: "Disagree Strongly"
+      },
+      {
+       value: 2,
+       text: "Disagree Moderately"
+      },
+      {
+       value: 3,
+       text: "Disagree a Little"
+      },
+      {
+       value: 4,
+       text: "Neither agree nor disagree"
+      },
+      {
+       value: 5,
+       text: "Agree a Little"
+      },
+      {
+       value: 6,
+       text: "Agree Moderately"
+      },
+      {
+       value: 7,
+       text: "Agree Strongly"
+      }
+     ]
+    }
+    ]
+  },
+  {
+   name: "openness",
+   elements: [
+    {
+     type: "rating",
+     name: "openness",
      title: "I have difficulty understanding abstract ideas",    
      isRequired: true,
      rateValues: [
@@ -408,53 +449,12 @@ var surveyJSON = {
       },
       {
        value: 7,
-       text: "Agree Moderately"
+       text: "Agree Strongly"
       }
      ]
     }
     ]
-  },
-    {
-   name: "openness",
-   elements: [
-    {
-     type: "rating",
-     name: "openness",
-     title: "I like to explore new places",    
-     isRequired: true,
-     rateValues: [
-      {
-       value: 1,
-       text: "Disagree Strongly"
-      },
-      {
-       value: 2,
-       text: "Disagree Moderately"
-      },
-      {
-       value: 3,
-       text: "Disagree a Little"
-      },
-      {
-       value: 4,
-       text: "Neither agree nor disagree"
-      },
-      {
-       value: 5,
-       text: "Agree a Little"
-      },
-      {
-       value: 6,
-       text: "Agree Moderately"
-      },
-      {
-       value: 7,
-       text: "Agree Moderately"
-      }
-     ]
-    }
-    ]
-  }     
+  }    
  ]
  
 };

@@ -6,9 +6,12 @@ Survey.Survey.cssType = "bootstrap";
 function printResult(results){
     var results = results;
     
-    var printChart = getChartData();
+    var printChart = getChartData(results);
     makechart(printChart);
     console.log(results.yes);
+    
+ 
+    
     return "result: " + JSON.stringify(results);
     
 };
@@ -32,12 +35,12 @@ var myChart = new Chart(ctx, {
 };
 
 //parse json object to create chart data
-getChartData = function(){
+getChartData = function(result){
     
-    
+    total_score = result.openness + result.conscientiousness + result.extraversion + result.agreeableness + result.neuroticism
     data = {
     datasets: [{
-        data: [12, 19, 3, 5, 2],
+        data: [ Math.round(result.openness/ total_score *100), Math.round(result.conscientiousness/ total_score *100), Math.round(result.extraversion/ total_score *100),Math.round(result.agreeableness/ total_score *100), Math.round(result.neuroticism/ total_score *100)],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
