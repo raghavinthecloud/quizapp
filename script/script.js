@@ -10,7 +10,7 @@ function printResult(results){
      //console.log(printChart);
     makechart(printChart);
     console.log(results);
-    //document.getElementById("Block").style.display = "none";
+    document.getElementById("Block").style.display = "none";
  
     
     //return "result: " + JSON.stringify(results);
@@ -19,10 +19,11 @@ function printResult(results){
 };
 
 var survey = new Survey.Model(surveyJSON);
-                $("#surveyElement").Survey({model:survey,});
+                $("#surveyElement").Survey({model:survey});
                 survey.onComplete.add(function (result) {
                         
-                        document.querySelector('#surveyResult').innerHTML = printResult(result.data);
+                         document.querySelector('#surveyResult').innerHTML = printResult(result.data);
+                        // console.log(result.data)
                 });
 
 

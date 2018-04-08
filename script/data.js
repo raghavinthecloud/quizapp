@@ -49,6 +49,10 @@ var surveyJSON = {
    name: "extraversion",
    elements: [
     {
+            type: "html",
+            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you"
+        },
+    {
      type: "rating",
      name: "extraversion_r",
      title: "I enjoy working on problems myself rather than in a team setting.",    
@@ -89,6 +93,10 @@ var surveyJSON = {
     {
    name: "agreeableness",
    elements: [
+    {
+            type: "html",
+            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you"
+        },
     {
      type: "rating",
      name: "agreeableness_r",
@@ -131,6 +139,10 @@ var surveyJSON = {
    name: "conscientiousness",
    elements: [
     {
+            type: "html",
+            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you"
+        },
+    {
      type: "rating",
      name: "conscientiousness",
      title: "I get chores done right away",    
@@ -171,6 +183,10 @@ var surveyJSON = {
   {
    name: "neuroticism",
    elements: [
+    {
+            type: "html",
+            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you"
+        },
     {
      type: "rating",
      name: "neuroticism",
@@ -213,6 +229,10 @@ var surveyJSON = {
    name: "openness",
    elements: [
     {
+            type: "html",
+            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you"
+        },
+    {
      type: "rating",
      name: "openness",
      title: "I like to explore new places",    
@@ -254,9 +274,13 @@ var surveyJSON = {
    name: "extraversion",
    elements: [
     {
+            type: "html",
+            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you"
+        },
+    {
      type: "rating",
      name: "extraversion",
-     title: "I like to talk to others at a party",    
+     title: "I like to talk to others at a party.",    
      isRequired: true,
      rateValues: [
       {
@@ -295,6 +319,10 @@ var surveyJSON = {
    name: "agreeableness",
    elements: [
     {
+            type: "html",
+            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you"
+        },
+    {
      type: "rating",
      name: "agreeableness",
      title: "I am interested in other people’s problems.",    
@@ -305,7 +333,7 @@ var surveyJSON = {
        text: "Disagree Strongly"
       },
       {
-       value: 2
+       value: 2,
        text: "Disagree Moderately"
       },
       {
@@ -335,6 +363,10 @@ var surveyJSON = {
    {
    name: "conscientiousness",
    elements: [
+    {
+            type: "html",
+            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you"
+        },
     {
      type: "rating",
      name: "conscientiousness_r",
@@ -377,6 +409,10 @@ var surveyJSON = {
    name: "neuroticism",
    elements: [
     {
+            type: "html",
+            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you"
+        },
+    {
      type: "rating",
      name: "neuroticism_r",
      title: "I am relaxed most of the times.",    
@@ -417,6 +453,10 @@ var surveyJSON = {
   {
    name: "openness",
    elements: [
+    {
+            type: "html",
+            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you"
+        },
     {
      type: "rating",
      name: "openness_r",
