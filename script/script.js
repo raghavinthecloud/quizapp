@@ -7,13 +7,14 @@ function printResult(results){
     var results = results;
     
     var printChart = getChartData(results);
-     console.log(printChart);
+     //console.log(printChart);
     makechart(printChart);
-    console.log(results.yes);
-    
+    //console.log(results.yes);
+    document.getElementById("Block").style.display = "none";
  
     
-    return "result: " + JSON.stringify(results);
+    //return "result: " + JSON.stringify(results);
+    
     
 };
 
