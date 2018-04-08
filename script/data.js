@@ -50,20 +50,20 @@ var surveyJSON = {
    elements: [
     {
      type: "rating",
-     name: "extraversion",
+     name: "extraversion_r",
      title: "I enjoy working on problems myself rather than in a team setting.",    
      isRequired: true,
      rateValues: [
       {
-       value: 1,
+       value: 7,
        text: "Disagree Strongly"
       },
       {
-       value: 2,
+       value: 6,
        text: "Disagree Moderately"
       },
       {
-       value: 3,
+       value: 5,
        text: "Disagree a Little"
       },
       {
@@ -71,15 +71,15 @@ var surveyJSON = {
        text: "Neither agree nor disagree"
       },
       {
-       value: 5,
+       value: 3,
        text: "Agree a Little"
       },
       {
-       value: 6,
+       value: 2,
        text: "Agree Moderately"
       },
       {
-       value: 7,
+       value: 1,
        text: "Agree Strongly"
       }
      ]
@@ -132,7 +132,7 @@ var surveyJSON = {
    elements: [
     {
      type: "rating",
-     name: "conscientiousness",
+     name: "conscientiousness_r",
      title: "I get chores done right away",    
      isRequired: true,
      rateValues: [
@@ -173,7 +173,7 @@ var surveyJSON = {
    elements: [
     {
      type: "rating",
-     name: "neuroticism",
+     name: "neuroticism_r",
      title: "I have frequent mood swings",    
      isRequired: true,
      rateValues: [
@@ -214,7 +214,7 @@ var surveyJSON = {
    elements: [
     {
      type: "rating",
-     name: "openness",
+     name: "openness_r",
      title: "I like to explore new places",    
      isRequired: true,
      rateValues: [
@@ -296,7 +296,7 @@ var surveyJSON = {
    elements: [
     {
      type: "rating",
-     name: "agreeableness",
+     name: "agreeableness_r",
      title: "I am interested in other people’s problems.",    
      isRequired: true,
      rateValues: [
