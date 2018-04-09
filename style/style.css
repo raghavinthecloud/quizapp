@@ -1,24 +1,36 @@
 .container{padding: 100px 0;}
 
-.sv_qstn div h5{
+.mineUser .sv_qstn div h5{
     font-size: 20px;
     padding: 0 0 20px 0 ;
 }
-.btn{
+.mineUser .btn{
     height: 55px;
     width: 125px;
     white-space: normal;
 }
-.panel-footer{
+.mineUser .panel-footer{
     border: none;
     background-color: #fff;
 }
-.chart{
+.mineUser .chart{
     width: 400px;
 }
-.imageCont img{
+.mineUser .imageCont img{
     width: 200px;
+    height: 125px;
 }
-.block{
-    
+.mineUser .imageCont{
+    display: inline;
+    width: 200px;
+    float: left;
+    margin: 5px;
+}
+.mineUser .panel-footer.card-footer input{
+    color: #fff;
+    background: #337ab7;
+    padding: 6px 10px;
+}
+.mineUser .block{
+    display: none;
 }

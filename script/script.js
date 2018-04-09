@@ -9,18 +9,16 @@ function printResult(results){
     var printChart = getChartData(results);
      //console.log(printChart);
     makechart(printChart);
-    console.log(results);
-    document.getElementById("Block").style.display = "none";
+    document.getElementById("block").style.display = "block";
  
     
     //return "result: " + JSON.stringify(results);
     
-    
 };
 
 var survey = new Survey.Model(surveyJSON);
-                $("#surveyElement").Survey({model:survey});
-                survey.onComplete.add(function (result) {
+$("#surveyElement").Survey({model:survey});
+survey.onComplete.add(function (result) {
                         
                          document.querySelector('#surveyResult').innerHTML = printResult(result.data);
                         // console.log(result.data)
@@ -29,16 +27,20 @@ var survey = new Survey.Model(surveyJSON);
 
 
 //make the chart, pass result data
-makechart = function(printChart){
+    makechart = function(printChart){
     var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-    type: 'polarArea',
-    data: printChart,
-});
+    
+    //remove the scale    
+    var options = {scale: {display: false }};
+    var myChart = new Chart(ctx, {
+        type: 'polarArea',
+        data: printChart,
+        options: options
+    });
 };
 
 //parse json object to create chart data
-getChartData = function(result){
+    getChartData = function(result){
     
     total_score = result.openness + result.conscientiousness + result.extraversion + result.agreeableness + result.neuroticism + result.openness_r + result.conscientiousness_r + result.extraversion_r + result.agreeableness_r + result.neuroticism_r;
     data = {
@@ -62,7 +64,7 @@ getChartData = function(result){
         
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: ["Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism"],
-};
+    };
     return data;
     
 }
