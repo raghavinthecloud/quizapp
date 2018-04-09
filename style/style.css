@@ -43,7 +43,7 @@
     width: 50%;
     float: left;
     padding: 10px;
-    height: 415px;
+    height: 455px;
 }
 .surveyResult{
     padding: 15px;
@@ -54,4 +54,10 @@
 .ocean .oceanIntro{
    padding: 40px 0 0 15px;
     width: 40%;
+}
+.mineUser .quotes{
+    font-style: italic;
+}
+.credits{
+    font-size: 0.8em;
 }
