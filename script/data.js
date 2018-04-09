@@ -1,6 +1,6 @@
 var surveyJSON = {
  completedHtml: "<h3>Results</h3>",
- showProgressBar: "top",
+ showProgressBar: "bottom",
  goNextPageAutomatic: true,
  pages: [
 //  {

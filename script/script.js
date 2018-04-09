@@ -9,20 +9,20 @@ function printResult(results){
     var printChart = getChartData(results);
      //console.log(printChart);
     makechart(printChart);
-    document.getElementById("block").style.display = "block";
+    document.getElementById("ocean").style.display = "block";
  
     
     //return "result: " + JSON.stringify(results);
     
 };
 
-var survey = new Survey.Model(surveyJSON);
-$("#surveyElement").Survey({model:survey});
-survey.onComplete.add(function (result) {
-                        
-                         document.querySelector('#surveyResult').innerHTML = printResult(result.data);
-                        // console.log(result.data)
-                });
+    var survey = new Survey.Model(surveyJSON);
+    $("#surveyElement").Survey({model:survey});
+    survey.onComplete.add(function (result) {
+        printResult(result.data);
+//        document.querySelector('#surveyResult').innerHTML = "From the way you answered the questions, you seem to describe yourself as someone who is energetic and active. Your answers describe you as someone who has the following traits";
+        document.getElementById("surveyResult").style.display = "block";
+    });
 
 
 

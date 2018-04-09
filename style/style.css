@@ -19,11 +19,11 @@
 .mineUser .imageCont img{
     width: 200px;
     height: 125px;
+    margin: 5px 0;
 }
 .mineUser .imageCont{
     display: inline;
     width: 200px;
-    float: left;
     margin: 5px;
 }
 .mineUser .panel-footer.card-footer input{
@@ -31,6 +31,27 @@
     background: #337ab7;
     padding: 6px 10px;
 }
-.mineUser .block{
+.mineUser .ocean{
     display: none;
+}
+.mineUser .ocean .block h3{
+    margin: 25px 0 0 0;
+}
+.mineUser .clear{clear: both;}
+
+.mineUser .block{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    height: 415px;
+}
+.surveyResult{
+    padding: 15px;
+    margin: 0 0 15px 0;
+    display: none;
+    width: 40%;
+}
+.ocean .oceanIntro{
+   padding: 40px 0 0 15px;
+    width: 40%;
 }
