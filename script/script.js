@@ -105,9 +105,11 @@ getChartData = function(result){
     
     //O
     if(openness >= 7)
-        document.getElementById("Creative").style.display = "block";
+{        document.getElementById("Creative").style.display = "block";
+        document.getElementById("CreativeDisp").style.display = "block";}
     else 
-        document.getElementById("Conventional").style.display = "block";
+        {document.getElementById("Conventional").style.display = "block";
+        document.getElementById("ConventionalDisp").style.display = "block";}
    //C
     if(conscientiousness >= 7)
         document.getElementById("Dependable").style.display = "block";

@@ -76,9 +76,9 @@ body{
     padding: 10px;
     width: 30%;
     float: left;
-    height: 260px;
+    height: 280px;
 }
 .open h5{font-weight: normal;}
 .open h5 span{font-weight: bold;}
-.open h4{text-align: center;}
+.open h4, .open h5{text-align: center;}
 .noshow{display: none;}
