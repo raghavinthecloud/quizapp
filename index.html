@@ -39,14 +39,73 @@
         
                 <div id="surveyElement"></div>
           
-                <div id="surveyResult" class="surveyResult"><p>From the way you answered the questions, You can bedescribe you as someone who has the following traits.</p></div>
-                <div class="chart"><canvas id="myChart" width="200" height="200"></canvas></div>
-            
-        
+                <div id="surveyResult" class="surveyResult">
+                    <p>From the way you answered the questions, You can bedescribe you as someone who has the following traits.</p>
+                
+                    <div class="open">
+                        <h4>Openness</h4>
+                        <canvas class="doughnut" id="chartO" width="100" height="100"></canvas>
+                        <h5 id="Creative" class="noshow"><span>Creative:</span>
+                            You are intellectually curious and your beliefs are individualistic and frequently drift towards the unconventional.
+                        </h5>
+                        <h5 id="Conventional" class="noshow"><span>Conventional:</span>
+                            You are down to earth and your activities are motivated by the  common beliefs than curiosity.
+                        </h5>
+                    </div>
+                    <div class="open">
+                        <h4>Conscientiousness</h4>
+                        <canvas class="doughnut" id="chartC" width="100" height="100"></canvas>
+                        <h5 id="Careless" class="noshow"><span>Careless:</span>
+                            You do not make long term plans and may even be disorganized and lazy.  
+
+                        </h5>
+                        <h5 id="Dependable" class="noshow"><span>Dependable:</span>
+                            You are thoughtful and prefer to plan everything to the last detail.
+                            Reserved:
+
+                        </h5>
+                    </div>
+                    <div class="open">
+                        <h4>Extraversion</h4>
+                        <canvas class="doughnut" id="chartE" width="100" height="100"></canvas>
+                        <h5 id="Extroverted" class="noshow"><span>Extroverted:</span>
+                            You are energetic and seek stimulation and enthusiasm in the company of others.
+
+                        </h5>
+                        <h5 id="Reserved" class="noshow"><span>Reserved:</span>
+                            You usually avoid larger social occasions and seek enjoyment in smaller groups. 
+
+                        </h5>
+                    </div>
+                    <div class="open">
+                        <h4>Agreeableness</h4>
+                        <canvas class="doughnut" id="chartA" width="100" height="100"></canvas>
+                        <h5 id="Critical" class="noshow"><span>Critical:</span>
+                           You may find it difficult to get along with people and be suspicious of their motives. 
+
+                        </h5>
+                        <h5 id="Warm" class="noshow"><span>Warm:</span>
+                            You are cooperative and people warm to you, and you to them.
+
+                        </h5>
+                    </div>
+                    <div class="open">
+                        <h4>Neuroticism</h4>
+                        <canvas class="doughnut" id="chartN" width="100" height="100"></canvas>
+                        <h5 id="Anxious" class="noshow"><span>Anxious:</span>
+                            You find it difficult to stay calm and resilient and may easily get upset or stress out.
+                        </h5>
+                        <h5 id="Calm" class="noshow"><span>Calm:</span>
+                            You are difficult to upset or stress out and you rarely react with negative emotions.
+
+                        </h5>
+                    </div>
+                    <div class="clear"></div>
+                </div>
         <div class="ocean" id="ocean">
             <p class="oceanIntro">Based on these personality profiles, users are targeted and specific type of wordings and imagery are carefully selected to resonate with them.
             </p>
-            <div class="block">
+            <div class="block" id="Openness">
                 <h3>Openness:</h3>
                 <p>Extent to which a person is open to experiencing a variety of activities.
 
@@ -63,7 +122,7 @@
                     
                 </div>
             </div>
-            <div class="block">
+            <div class="block" id="Conscientiousness">
                 <h3>Conscientiousness:</h3>
                 <p>Conscientiousness concerns the way in which we control, regulate, and direct our impulses. Person’s tendency to act in an organized or thoughtful way. </p><p>Images similar to the following appeal to people who have high conscientiousness.
                 </p>
@@ -77,7 +136,7 @@
                     <div class="imageCont"><img src="images/conscientousness/estee-janssens-396889-unsplash.jpg"></div>
                 </div>
             </div>
-            <div class="block">
+            <div class="block" id="Agreeableness">
                 <h3>Agreeableness:</h3>
                 <p>Agreeableness reflects individual differences in concern with cooperation and social harmony. Person’s tendency to be compassionate and cooperative toward others.</p><p> Images similar to the following appeal to people who have high Agreeableness.
                 </p>
@@ -91,7 +150,7 @@
                     <div class="imageCont"><img src="images/agreeableness/holding-hands-1241442.jpg"></div>
                 </div>
             </div>
-            <div class="block">
+            <div class="block" id="Neuroticism">
                 <h3>Neuroticism:</h3>
                 <p>Neuroticism refers to the tendency to experience negative emotions. Person’s emotions are sensitive to the individual’s environment. </p><p>Images similar to the following appeal to people who have high Neuroticism.
                 </p>
@@ -120,6 +179,7 @@
                     <div class="imageCont"><img src="images/extrovert/my-world-1578241.jpg"></div>
                 </div>
             </div>
+            <div class="chart block"><canvas id="myChart" width="200" height="200"></canvas></div>
             <div class="clear"></div>
             <div class="credits">Photo by Estée Janssens, Olu Eletu, rawpixel.com, JESHOOTS.COM on Unsplash</div>
         </div>
