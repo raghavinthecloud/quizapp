@@ -55,7 +55,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "extraversion_r",
-     title: "I enjoy working on problems myself rather than in a team setting.",    
+     title: "I enjoy working on problems alone than in a team setting.",    
      isRequired: true,
      rateValues: [
       {
@@ -100,7 +100,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "agreeableness_r",
-     title: "I don’t easily believe others.",    
+     title: "I don’t easily believe what others say.",    
      isRequired: true,
      rateValues: [
       {
@@ -145,7 +145,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "conscientiousness",
-     title: "I get chores done right away",    
+     title: "I get chores done right away.",    
      isRequired: true,
      rateValues: [
       {
@@ -190,7 +190,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "neuroticism",
-     title: "I have frequent mood swings",    
+     title: "I frequently feel moody.",    
      isRequired: true,
      rateValues: [
       {
@@ -235,7 +235,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "openness",
-     title: "I like to explore new places",    
+     title: "I enjoy exploring new places.",    
      isRequired: true,
      rateValues: [
       {
@@ -280,7 +280,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "extraversion",
-     title: "I like to talk to others at a party.",    
+     title: "I like to talk to strangers at parties.",    
      isRequired: true,
      rateValues: [
       {
@@ -325,7 +325,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "agreeableness",
-     title: "I am interested in other people’s problems.",    
+     title: "I am interested in hearing other people’s problems.",    
      isRequired: true,
      rateValues: [
       {
@@ -370,7 +370,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "conscientiousness_r",
-     title: "I forget to put things back in their proper place",    
+     title: "I don't usually put things back in their proper place.",    
      isRequired: true,
      rateValues: [
       {
@@ -415,7 +415,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "neuroticism_r",
-     title: "I am relaxed most of the times.",    
+     title: "I am relaxed most of the time.",    
      isRequired: true,
      rateValues: [
       {
@@ -460,7 +460,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "openness_r",
-     title: "I have difficulty understanding abstract ideas",    
+     title: "I have difficulty understanding abstract ideas.",    
      isRequired: true,
      rateValues: [
       {

@@ -11,8 +11,8 @@ function printResult(results){
     makechart(printChart);
     document.getElementById("ocean").style.display = "block";
  
-    
-    //return "result: " + JSON.stringify(results);
+    console.log(results);
+    return "result: " + JSON.stringify(results);
     
 };
 
