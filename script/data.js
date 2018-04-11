@@ -50,8 +50,9 @@ var surveyJSON = {
    elements: [
     {
             type: "html",
-            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you"
-        },
+            html: "Please select an answer to indicate the extent to which you agree or disagree with the statement. You should rate the extent to which the statement applies to you."
+            },
+
     {
      type: "rating",
      name: "extraversion_r",

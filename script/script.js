@@ -182,7 +182,8 @@ getChartData = function(result){
          balance++;
     }
     if (balance == 5){
-        document.getElementById("balanced").style.display = "block";
+        document.getElementById("balanced_quote").style.display = "block";
+        document.getElementById("balanced_image").style.display = "block";
     }
     
     data = {
