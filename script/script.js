@@ -231,7 +231,7 @@ getChartData = function(result){
      dataN = {
         datasets: [{
             data: [result.neuroticism, result.neuroticism_r],
-            backgroundColor: ["#00001", "#14def3"],
+            backgroundColor: ["#000ff0", "#14def3"],
         }]
     };
     
