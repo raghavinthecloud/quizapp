@@ -19,93 +19,115 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://surveyjs.azureedge.net/1.0.16/survey.jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-   <script src="script/data.js"></script>
-    
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://surveyjs.azureedge.net/1.0.16/survey.jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <script src="script/data.js"></script>
+
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    
+
     <div class="container mineUser">
-           
-                <div id="surveyTitle"> <h1>What drives you to make decisions?</h1></div>
+
+        <div id="surveyTitle"> <h1>What drives you to make decisions?</h1></div>
         
-                <div id="surveyElement"></div>
-          
-                <div id="surveyResult" class="surveyResult">
-                    <p>From the way you answered the questions, You can bedescribe you as someone who has the following traits.</p>
-                
-                    <div class="open">
-                        <h4>Openness</h4>
-                        <h5>Conventional vs Creative</h5>
-                        <canvas class="doughnut" id="chartO" width="100" height="100"></canvas>
-                        <h5 id="Creative" class="noshow"><span>Creative:</span>
-                            You are intellectually curious and your beliefs are individualistic and frequently drift towards the unconventional.
-                        </h5>
-                        <h5 id="Conventional" class="noshow"><span>Conventional:</span>
-                            You are down to earth and your activities are motivated by the  common beliefs than curiosity.
-                        </h5>
-                    </div>
-                    <div class="open">
-                        <h4>Conscientiousness</h4>
-                        <canvas class="doughnut" id="chartC" width="100" height="100"></canvas>
-                        <h5 id="Careless" class="noshow"><span>Careless:</span>
-                            You do not make long term plans and may even be disorganized and lazy.  
+        <div id="surveyElement"></div>
 
-                        </h5>
-                        <h5 id="Dependable" class="noshow"><span>Dependable:</span>
-                            You are thoughtful and prefer to plan everything to the last detail.
-                            Reserved:
+        <div id="surveyResult" class="surveyResult">
+            <p>From the way you answered the questions, You can bedescribe you as someone who has the following traits.</p>
 
-                        </h5>
-                    </div>
-                    <div class="open">
-                        <h4>Extraversion</h4>
-                        <canvas class="doughnut" id="chartE" width="100" height="100"></canvas>
-                        <h5 id="Extroverted" class="noshow"><span>Extroverted:</span>
-                            You are energetic and seek stimulation and enthusiasm in the company of others.
+            <div class="open">
+                <h4>Openness</h4>
+                <h5>Conventional vs Creative</h5>
+                <canvas class="doughnut" id="chartO" width="100" height="100"></canvas>
+                <h5 id="Creative" class="noshow"><span>Creative:</span>
+                    You are intellectually curious and your beliefs are individualistic and frequently drift towards the unconventional.
+                </h5>
+                <h5 id="Conventional" class="noshow"><span>Conventional:</span>
+                    You are down to earth and your activities are motivated by the  common beliefs than curiosity.
+                </h5>
+                <h5 id="Conventional_Creative" class="noshow"><span>Both:</span>
+                    You are curious and well as down to earth. Based on the situation, your beliefs are individualistic or conventional
 
-                        </h5>
-                        <h5 id="Reserved" class="noshow"><span>Reserved:</span>
-                            You usually avoid larger social occasions and seek enjoyment in smaller groups. 
+                </h5>
+            </div>
+            <div class="open">
+                <h4>Conscientiousness</h4>
+                <canvas class="doughnut" id="chartC" width="100" height="100"></canvas>
+                <h5 id="Careless" class="noshow"><span>Careless:</span>
+                    You do not make long term plans and may even be disorganized and lazy.
 
-                        </h5>
-                    </div>
-                    <div class="open">
-                        <h4>Agreeableness</h4>
-                        <canvas class="doughnut" id="chartA" width="100" height="100"></canvas>
-                        <h5 id="Critical" class="noshow"><span>Critical:</span>
-                           You may find it difficult to get along with people and be suspicious of their motives. 
+                </h5>
+                <h5 id="Dependable" class="noshow"><span>Dependable:</span>
+                    You are thoughtful and prefer to plan everything to the last detail.
 
-                        </h5>
-                        <h5 id="Warm" class="noshow"><span>Warm:</span>
-                            You are cooperative and people warm to you, and you to them.
+                </h5>
+                <h5 id="Dependable_Careless" class="noshow"><span>Both:</span>
+                    You are thoughtful at times but also disorganized at other times.
+                </h5>
 
-                        </h5>
-                    </div>
-                    <div class="open">
-                        <h4>Neuroticism</h4>
-                        <canvas class="doughnut" id="chartN" width="100" height="100"></canvas>
-                        <h5 id="Anxious" class="noshow"><span>Anxious:</span>
-                            You find it difficult to stay calm and resilient and may easily get upset or stress out.
-                        </h5>
-                        <h5 id="Calm" class="noshow"><span>Calm:</span>
-                            You are difficult to upset or stress out and you rarely react with negative emotions.
+            </div>
+            <div class="open">
+                <h4>Extraversion</h4>
+                <h5>Reserved vs Extroverted</h5>
+                <canvas class="doughnut" id="chartE" width="100" height="100"></canvas>
+                <h5 id="Extroverted" class="noshow"><span>Both:</span>
+                    You are energetic and seek stimulation and enthusiasm in the company of others.
 
-                        </h5>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-        <div class="ocean" id="ocean">
-            <p class="oceanIntro">Based on these personality profiles, users are targeted and specific type of wordings and imagery are carefully selected to resonate with them.
-            </p>
+                </h5>
+                <h5 id="Reserved" class="noshow"><span>Reserved:</span>
+                    You usually avoid larger social occasions and seek enjoyment in smaller groups. 
+
+                </h5>
+                <h5 id="Reserved_Extroverted" class="noshow"><span>Both:</span>
+                    You are balance your extroversion and reserved behavior. 
+
+                </h5>
+            </div>
+            <div class="open">
+                <h4>Agreeableness</h4>
+                <h5>Warm vs Critical</h5>
+                <canvas class="doughnut" id="chartA" width="100" height="100"></canvas>
+                <h5 id="Critical" class="noshow"><span>Critical:</span>
+                 You may find it difficult to get along with people and be suspicious of their motives. 
+
+             </h5>
+             <h5 id="Warm" class="noshow"><span>Warm:</span>
+                You are cooperative and people warm to you, and you to them.
+
+            </h5>
+            <h5 id="Warm_Critical" class="noshow"><span>Both:</span>
+                You adapt and can be warm as well as critical.
+
+            </h5>
+        </div>
+        <div class="open">
+            <h4>Neuroticism</h4>
+            <h5>Calm vs Anxious</h5>
+            <canvas class="doughnut" id="chartN" width="100" height="100"></canvas>
+            <h5 id="Anxious" class="noshow"><span>Anxious:</span>
+                You find it difficult to stay calm and resilient and may easily get upset or stress out.
+            </h5>
+            <h5 id="Calm" class="noshow"><span>Calm:</span>
+                You are difficult to upset or stress out and you rarely react with negative emotions.
+
+            </h5>
+            <h5 id="Calm_Anxious" class="noshow"><span>Both:</span>
+                You stay calm at times but are also likely to stress out at other times.
+
+            </h5>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="ocean" id="ocean">
+        <p class="oceanIntro">Based on these personality profiles, users are targeted and specific type of wordings and imagery are carefully selected to resonate with them.
+        </p>
 <!--
             <div class="block" id="Openness">
                 <h3>Openness:</h3>
@@ -181,47 +203,67 @@
                     <div class="imageCont"><img src="images/extrovert/my-world-1578241.jpg"></div>
                 </div>
             </div>
--->
-            //@Vinita
-            <div class="block noshow" id="CreativeDisp">
-                <h3> :</h3>
-                <P class="quotes">“ Try our new..”</P>
-                <div class="dispImg">
-                    <div class="imageCont">
-                        <img src="images/openness/jeshoots-com-357165-unsplash.jpg">
-                    </div>
-                    <div class="imageCont"><img src="images/openness/colorful-cream-cakes-pastries-sweet-food-2K-wallpaper-middle-size.jpg"></div>
-                    <div class="imageCont"><img src="images/openness/kids-piano-lessons.jpg"></div>
-                    <div class="imageCont"><img src="images/openness/rawpixel-com-315196-unsplash.jpg"></div>
-                    
-                </div>
-            </div>
-            <div class="block noshow" id="ConventionalDisp">
-                <h3> Conventional:</h3>
-                <P class="quotes">“ Try our new..”</P>
-                <div class="dispImg">
-                    <div class="imageCont">
-                        <img src="images/openness/jeshoots-com-357165-unsplash.jpg">
-                    </div>
-                    <div class="imageCont"><img src="images/openness/colorful-cream-cakes-pastries-sweet-food-2K-wallpaper-middle-size.jpg"></div>
-                    <div class="imageCont"><img src="images/openness/kids-piano-lessons.jpg"></div>
-                    <div class="imageCont"><img src="images/openness/rawpixel-com-315196-unsplash.jpg"></div>
-                    
-                </div>
-            </div>
-           
-            <div class="chart block"><canvas id="myChart" width="200" height="200"></canvas></div>
-            <div class="clear"></div>
-            <div class="credits">Photo by Estée Janssens, Olu Eletu, rawpixel.com, JESHOOTS.COM on Unsplash</div>
+        -->
+        //@Vinita
+        <div class="block noshow" id="Target_Text">
+            <h3>You are likely to respond to </h3>
+            <P class="quotes noshow" id="Creative_quote">“ Try our new...”</P>
+            <P class="quotes noshow" id="Conventional_quote">“ Our traditional...”</P>
+            <P class="quotes noshow" id="Dependable_quote">“ Stay organized...”</P>
+            <P class="quotes noshow" id="Reserved_quote">“ Get custom...”</P>
+            <P class="quotes noshow" id="Extroverted_quote">“ Check our exciting...”</P>
+            <P class="quotes noshow" id="Critical_quote">“ Learn about our...”</P>
+            <P class="quotes noshow" id="Careless_quote">“ Try our new...”</P>
+            <P class="quotes noshow" id="warm_quote">“ Stay in touch with...”</P>
+            <P class="quotes noshow" id="calm_quote">“ Get our...”</P>
+            <P class="quotes noshow" id="Anxious_quote">“ Stay Safe and secure with ...”</P>
         </div>
-        
+        <div class="block noshow" id="Target_Images">
+            <div class="dispImg">
+                <div class="imageCont noshow" id="Creative_image">
+                    <img src="images_v2/openness/high/image.jpg">
+                </div>    
+                 <div class="imageCont noshow" id="Conventional_image">
+                    <img src="images_v2/openness/low/image.jpg">
+                </div>    
+                 <div class="imageCont noshow" id="Creative_image">
+                    <img src="images_v2/conscientiousness/high/image.jpg">
+                </div>    
+                 <div class="imageCont noshow" id="Creative_image">
+                    <img src="images_v2/conscientiousness/low/image.jpg">
+                </div>    
+                 <div class="imageCont noshow" id="Creative_image">
+                    <img src="images_v2/extraversion/high/image.jpg">
+                </div>    
+                 <div class="imageCont noshow" id="Creative_image">
+                    <img src="images_v2/extraversion/low/image.jpg">
+                </div>    
+                 <div class="imageCont noshow" id="Creative_image">
+                    <img src="images_v2/agreeableness/high/image.jpg">
+                </div>    
+                 <div class="imageCont noshow" id="Creative_image">
+                    <img src="images_v2/agreeableness/low/image.jpg">
+                </div>    
+                 <div class="imageCont noshow" id="Creative_image">
+                    <img src="images_v2/neuroticism/high/image.jpg">
+                </div>    
+                 <div class="imageCont noshow" id="Creative_image">
+                    <img src="images_v2/neuroticism/low/image.jpg">
+                </div>                                       
+            </div>
+        </div>
+        <div class="chart block"><canvas id="myChart" width="200" height="200"></canvas></div>
+        <div class="clear"></div>
+        <div class="credits">Photo by Estée Janssens, Olu Eletu, rawpixel.com, JESHOOTS.COM on Unsplash</div>
     </div>
-    <!-- /.container -->
+
+</div>
+<!-- /.container -->
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-     <script src="script/script.js"></script>
-    
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="script/script.js"></script>
+
 </body>
 
 </html>
