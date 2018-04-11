@@ -205,13 +205,14 @@ getChartData = function(result){
     
     dataO = {
         datasets: [{
+            //data: [25, 75],
             data: [result.openness,result.openness_r],
             backgroundColor: ["#F65959", "#5271FF"],
         }]
     };
      dataC = {
         datasets: [{
-            data: [result.conscientiousness, result.conscientiousness_r],
+            data: [result.conscientiousness_r, result.conscientiousness],
             backgroundColor: ["#bbbebe", "#009920"],
         }]
     };
@@ -223,7 +224,7 @@ getChartData = function(result){
     };
      dataA = {
         datasets: [{
-            data: [result.agreeableness, result.agreeableness_r],
+            data: [result.agreeableness_r, result.agreeableness],
             backgroundColor: ["#cc0000", "#ffd966"],
         }]
     };

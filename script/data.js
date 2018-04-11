@@ -59,15 +59,15 @@ var surveyJSON = {
      isRequired: true,
      rateValues: [
       {
-       value: 7,
+       value: 1,
        text: "Disagree Strongly"
       },
       {
-       value: 6,
+       value: 2,
        text: "Disagree Moderately"
       },
       {
-       value: 5,
+       value: 3,
        text: "Disagree a Little"
       },
       {
@@ -75,15 +75,15 @@ var surveyJSON = {
        text: "Neither agree nor disagree"
       },
       {
-       value: 3,
+       value: 5,
        text: "Agree a Little"
       },
       {
-       value: 2,
+       value: 6,
        text: "Agree Moderately"
       },
       {
-       value: 1,
+       value: 7,
        text: "Agree Strongly"
       }
      ]
@@ -102,17 +102,17 @@ var surveyJSON = {
      name: "agreeableness_r",
      title: "I don’t easily believe what others say.",    
      isRequired: true,
-     rateValues: [
+    rateValues: [
       {
-       value: 7,
+       value: 1,
        text: "Disagree Strongly"
       },
       {
-       value: 6,
+       value: 2,
        text: "Disagree Moderately"
       },
       {
-       value: 5,
+       value: 3,
        text: "Disagree a Little"
       },
       {
@@ -120,15 +120,15 @@ var surveyJSON = {
        text: "Neither agree nor disagree"
       },
       {
-       value: 3,
+       value: 5,
        text: "Agree a Little"
       },
       {
-       value: 2,
+       value: 6,
        text: "Agree Moderately"
       },
       {
-       value: 1,
+       value: 7,
        text: "Agree Strongly"
       }
      ]
@@ -374,15 +374,15 @@ var surveyJSON = {
      isRequired: true,
      rateValues: [
       {
-       value: 7,
+       value: 1,
        text: "Disagree Strongly"
       },
       {
-       value: 6,
+       value: 2,
        text: "Disagree Moderately"
       },
       {
-       value: 5,
+       value: 3,
        text: "Disagree a Little"
       },
       {
@@ -390,15 +390,15 @@ var surveyJSON = {
        text: "Neither agree nor disagree"
       },
       {
-       value: 3,
+       value: 5,
        text: "Agree a Little"
       },
       {
-       value: 2,
+       value: 6,
        text: "Agree Moderately"
       },
       {
-       value: 1,
+       value: 7,
        text: "Agree Strongly"
       }
      ]
@@ -419,15 +419,15 @@ var surveyJSON = {
      isRequired: true,
      rateValues: [
       {
-       value: 7,
+       value: 1,
        text: "Disagree Strongly"
       },
       {
-       value: 6,
+       value: 2,
        text: "Disagree Moderately"
       },
       {
-       value: 5,
+       value: 3,
        text: "Disagree a Little"
       },
       {
@@ -435,15 +435,15 @@ var surveyJSON = {
        text: "Neither agree nor disagree"
       },
       {
-       value: 3,
+       value: 5,
        text: "Agree a Little"
       },
       {
-       value: 2,
+       value: 6,
        text: "Agree Moderately"
       },
       {
-       value: 1,
+       value: 7,
        text: "Agree Strongly"
       }
      ]
@@ -464,15 +464,15 @@ var surveyJSON = {
      isRequired: true,
      rateValues: [
       {
-       value: 7,
+       value: 1,
        text: "Disagree Strongly"
       },
       {
-       value: 6,
+       value: 2,
        text: "Disagree Moderately"
       },
       {
-       value: 5,
+       value: 3,
        text: "Disagree a Little"
       },
       {
@@ -480,15 +480,15 @@ var surveyJSON = {
        text: "Neither agree nor disagree"
       },
       {
-       value: 3,
+       value: 5,
        text: "Agree a Little"
       },
       {
-       value: 2,
+       value: 6,
        text: "Agree Moderately"
       },
       {
-       value: 1,
+       value: 7,
        text: "Agree Strongly"
       }
      ]
