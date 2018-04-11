@@ -102,35 +102,82 @@ getChartData = function(result){
     extraversion = result.extraversion+result.extraversion_r;
     agreeableness = result.agreeableness+result.agreeableness_r;
     neuroticism = result.neuroticism+result.neuroticism_r;
-    
+    console.log(result)
+    var balance = 0
     //O
-    if(openness >= 7)
+    if(openness > 8)
 {        document.getElementById("Creative").style.display = "block";
-        document.getElementById("Creative_image").style.display = "block";}
-    else 
+        document.getElementById("Creative_image").style.display = "block";
+        document.getElementById("Creative_quote").style.display = "block";}
+    else if(openness < 8)
         {document.getElementById("Conventional").style.display = "block";
-        document.getElementById("Conventional_image").style.display = "block";}
-   //C
-    if(conscientiousness >= 7)
+        document.getElementById("Conventional_image").style.display = "block";
+        document.getElementById("Conventional_quote").style.display = "block";}
+    else{
+        document.getElementById("Conventional_Creative").style.display = "block";
+        balance++;
+    }
+   
+    if(conscientiousness > 8){
         document.getElementById("Dependable").style.display = "block";
-    else 
-        document.getElementById("Careless").style.display = "block";
+        document.getElementById("Dependable_quote").style.display = "block";
+        document.getElementById("Dependable_image").style.display = "block";
+        }
+    else if(conscientiousness < 8){
+        document.getElementById("Careless").style.display = "block"
+        document.getElementById("Careless_quote").style.display = "block";
+        document.getElementById("Careless_image").style.display = "block";
+    }else{
+        document.getElementById("Dependable_Careless").style.display = "block";
+        balance++;
+    }
     
     //E
-    if(extraversion >= 7)
+    if(extraversion > 8){
         document.getElementById("Extroverted").style.display = "block";
-    else 
+        document.getElementById("Extroverted_quote").style.display = "block";
+        document.getElementById("Extroverted_image").style.display = "block";
+    }
+    else if(extraversion < 8){
         document.getElementById("Reserved").style.display = "block";
+        document.getElementById("Reserved_image").style.display = "block";
+        document.getElementById("Reserved_quote").style.display = "block";
+    }else{
+        document.getElementById("Reserved_Extroverted").style.display = "block";
+        balance++;
+    }
     //A
-    if(agreeableness >= 7)
+    if(agreeableness > 8){
         document.getElementById("Warm").style.display = "block";
-    else 
+        document.getElementById("Warm_image").style.display = "block";
+        document.getElementById("Warm_quote").style.display = "block";
+    }
+    else if(agreeableness < 8){
         document.getElementById("Critical").style.display = "block";
+        document.getElementById("Critical_image").style.display = "block";
+        document.getElementById("Critical_quote").style.display = "block";
+    }else{
+        document.getElementById("Warm_Critical").style.display = "block";
+        balance++;
+    }
     //N
-    if(neuroticism >= 7)
+    if(neuroticism > 8){
         document.getElementById("Anxious").style.display = "block";
-    else 
+        document.getElementById("Anxious_image").style.display = "block";
+        document.getElementById("Anxious_quote").style.display = "block";
+    }
+    else if(neuroticism < 8){
         document.getElementById("Calm").style.display = "block";
+        document.getElementById("Calm_image").style.display = "block";
+        document.getElementById("Calm_quote").style.display = "block";
+    }
+    else{
+         document.getElementById("Calm_Anxious").style.display = "block";
+         balance++;
+    }
+    if (balance == 5){
+        document.getElementById("balanced").style.display = "block";
+    }
     
     data = {
     datasets: [{
@@ -158,32 +205,32 @@ getChartData = function(result){
     
     dataO = {
         datasets: [{
-            data: [openness, 14],
-            backgroundColor: ["#0074D9", "#FF4136"],
+            data: [result.openness,result.openness_r],
+            backgroundColor: ["#F65959", "#5271FF"],
         }]
     };
      dataC = {
         datasets: [{
-            data: [conscientiousness, 14],
-            backgroundColor: ["#0074D9", "#FF4136"],
+            data: [result.conscientiousness, result.conscientiousness_r],
+            backgroundColor: ["#bbbebe", "#009920"],
         }]
     };
      dataE = {
         datasets: [{
-            data: [extraversion, 14],
-            backgroundColor: ["#0074D9", "#FF4136"],
+            data: [result.extraversion, result.extraversion_r],
+            backgroundColor: ["#d66312", "#0b5394"],
         }]
     };
      dataA = {
         datasets: [{
-            data: [agreeableness, 14],
-            backgroundColor: ["#0074D9", "#FF4136"],
+            data: [result.agreeableness, result.agreeableness_r],
+            backgroundColor: ["#cc0000", "#ffd966"],
         }]
     };
      dataN = {
         datasets: [{
-            data: [neuroticism, 14],
-            backgroundColor: ["#0074D9", "#FF4136"],
+            data: [result.neuroticism, result.neuroticism_r],
+            backgroundColor: ["#00000", "#14def3"],
         }]
     };
     
