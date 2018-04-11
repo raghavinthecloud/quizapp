@@ -56,7 +56,7 @@ var surveyJSON = {
     {
      type: "rating",
      name: "extraversion_r",
-     title: "I enjoy working on problems alone than in a team setting.",    
+     title: "I prefer working on problems alone rather than in a team setting.",    
      isRequired: true,
      rateValues: [
       {
