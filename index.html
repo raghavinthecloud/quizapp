@@ -31,6 +31,16 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                
+                <a class="navbar-brand" href="#">Personality Test</a>
+            </div>
+            
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
 
 
     <div class="container mineUser">
@@ -109,7 +119,7 @@
 
             </h5>
         </div>
-        <div class="open">
+            <div class="open">
             <h4>Neuroticism</h4>
             <h5>Calm vs Anxious</h5>
             <canvas class="doughnut" id="chartN" width="100" height="100"></canvas>
@@ -125,14 +135,19 @@
 
             </h5>
         </div>
-        <div class="clear"></div>
-    </div>
-    <div class ="noshow" id="overall_chart"><p>Looking at the big picture, you have the five personality attributes can be found in the following proportions.</p>
-        <div class="chart block"><canvas id="myChart" width="200" height="200"></canvas></div>
-    </div>
-    <div class="ocean" id="ocean">
-        <p class="oceanIntro">Based on these personality profiles, users are targeted and specific type of wording and imagery is selected to resonate with them.
-        </p>
+            <div class="clear"></div>
+        </div>
+     
+<!--
+        <div class ="noshow" id="overall_chart">
+            <p>Looking at the big picture, you have the five personality attributes can be found in the following proportions.</p>
+            <div class="chart block"><canvas id="myChart" width="200" height="200"></canvas></div>
+        </div>
+-->
+
+        <div class="ocean" id="ocean">
+        <h4 class="oceanIntro">Based on these personality profiles, users are targeted and specific type of wording and imagery is selected to resonate with them.
+        </h4>
 <!--
             <div class="block" id="Openness">
                 <h3>Openness:</h3>
@@ -210,9 +225,9 @@
             </div>
         -->
          
-        //@Vinita
+  
         <div class="block" id="Target_Text">
-            <h3>Messages or text you are likely to respond to </h3>
+            <h4>Messages or text you are likely to respond to </h4>
             <P class="quotes noshow" id="Creative_quote">“ Try our new...”</P>
             <P class="quotes noshow" id="Conventional_quote">“ Our traditional...”</P>
             <P class="quotes noshow" id="Dependable_quote">“ Stay organized...”</P>
@@ -226,49 +241,52 @@
             <p class="quotes noshow" id="balanced">Our quiz shows that you have a well balanced personality and we cannot determine which messages or text you would respond to.</p>
         </div>
         <div class ="block" id="Target_Images">
-            <h3>Images that you might like</h3>
+            <h4>Images that you might positively relate to:</h4>
             <div class="dispImg">
-                <div class="imageCont">
-                    <img class = "noshow" id="Creative_image" src="images_v2/openness/high/image.jpg">
+                <div class="imageCont noshow"id="Creative_image">
+                    <img   src="images_v2/openness/high/image.jpg">
                 </div>    
-                 <div class=" imageCont">
-                    <img class ="noshow" id="Conventional_image" src="images_v2/openness/low/image.jpg">
+                 <div class=" imageCont noshowt" id="Conventional_image">
+                    <img  src="images_v2/openness/low/image.jpg">
                 </div>    
-                 <div class="imageCont" >
-                    <img class ="noshow" id="Dependable_image" src="images_v2/conscientiousness/high/image.jpg">
+                 <div class="imageCont noshow" id="Dependable_image">
+                    <img  src="images_v2/conscientiousness/high/image.jpg">
                 </div>    
-                 <div class="imageCont">
-                    <img class ="noshow" id="Careless_image" src="images_v2/conscientiousness/low/image.jpg">
+                 <div class="imageCont noshow" id="Careless_image" >
+                    <img src="images_v2/conscientiousness/low/image.jpg">
                 </div>    
-                 <div class="imageCont" >
-                    <img class ="noshow" id="Extroverted_image" src="images_v2/extraversion/high/image.jpg">
+                 <div class="imageCont noshow" id="Extroverted_image">
+                    <img  src="images_v2/extraversion/high/image.jpg">
                 </div>    
-                 <div class="imageCont" >
-                    <img class ="noshow" id="Reserved_image" src="images_v2/extraversion/low/image.jpg">
+                 <div class="imageCont noshow" id="Reserved_image">
+                    <img  src="images_v2/extraversion/low/image.jpg">
                 </div>    
-                 <div class="imageCont">
-                    <img class ="noshow" id="Warm_image" src="images_v2/agreeableness/high/image.jpg">
+                 <div class="imageCont noshow" id="Warm_image">
+                    <img  src="images_v2/agreeableness/high/image.jpg">
                 </div>    
-                 <div class="imageCont" >
-                    <img class ="noshow" id="Critical_image" src="images_v2/agreeableness/low/image.jpg">
+                 <div class="imageCont noshow" id="Critical_image">
+                    <img  src="images_v2/agreeableness/low/image.jpg">
                 </div>    
-                 <div class="imageCont" >
-                    <img class ="noshow" id="Anxious_image" src="images_v2/neuroticism/high/image.jpg">
+                 <div class="imageCont noshow" id="Anxious_image">
+                    <img  src="images_v2/neuroticism/high/image.jpg">
                 </div>    
-                 <div class="imageCont" >
-                    <img class ="noshow" id="Calm_image" src="images_v2/neuroticism/low/image.jpg">
-                </div>     
+                 <div class="imageCont noshow" id="Calm_image">
+                    <img  src="images_v2/neuroticism/low/image.jpg">
+                </div>    
+                <div class="clear"></div>
                 <p class="noshow" id="balanced">Our quiz shows that you have a well balanced personality and we cannot determine which images you would appeal to you.</p>                                  
             </div>
         </div>
        
-        <div class="clear"></div>
-        <div class="credits">Photo by Estée Janssens, Olu Eletu, rawpixel.com, JESHOOTS.COM on Unsplash</div>
+        <div class="clear bottom"></div>
+<!--        <div class="credits">Photo by Estée Janssens, Olu Eletu, rawpixel.com, JESHOOTS.COM on Unsplash</div>-->
+        </div>
+
     </div>
-
-</div>
 <!-- /.container -->
-
+<!--
+   
+-->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="script/script.js"></script>

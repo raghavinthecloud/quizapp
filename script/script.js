@@ -32,14 +32,14 @@ survey.onComplete.add(function (result) {
 makechart = function(printChart,dataO){
     
     //print volume chart
-    var ctx = document.getElementById("myChart");
-    //remove the scale    
-    var options = {scale: {display: false }};
-    var myChart = new Chart(ctx, {
-        type: 'polarArea',
-        data: printChart,
-        options: options
-    });
+//    var ctx = document.getElementById("myChart");
+//    //remove the scale    
+//    var options = {scale: {display: false }};
+//    var myChart = new Chart(ctx, {
+//        type: 'polarArea',
+//        data: printChart,
+//        options: options
+//    });
     
     var opennessChart = document.getElementById("chartO");
     var myDoughnutChart = new Chart(opennessChart, {
@@ -109,7 +109,7 @@ getChartData = function(result){
     // neuroticism = result.neuroticism+result.neuroticism_r;
     console.log(result)
     var balance = 0
-    document.getElementById("overall_chart").style.display ="block";
+    //document.getElementById("overall_chart").style.display ="block";
     //O
     if(result.openness > result.openness_r)
 {        document.getElementById("Creative").style.display = "block";
@@ -172,7 +172,7 @@ getChartData = function(result){
         document.getElementById("Anxious_image").style.display = "block";
         document.getElementById("Anxious_quote").style.display = "block";
     }
-    else if(result.neuroticism < result.neuroticism_){
+    else if(result.neuroticism < result.neuroticism_r){
         document.getElementById("Calm").style.display = "block";
         document.getElementById("Calm_image").style.display = "block";
         document.getElementById("Calm_quote").style.display = "block";

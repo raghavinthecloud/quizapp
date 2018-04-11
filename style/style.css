@@ -1,7 +1,7 @@
 body{
 /*    font-family: 'Roboto', sans-serif;*/
 }
-.container{padding: 100px 0;}
+.container.mineUser{ padding: 50px 15px;}
 
 .mineUser .sv_qstn div h5{
     font-size: 20px;
@@ -23,11 +23,12 @@ body{
     width: 200px;
     height: 125px;
     margin: 5px 0;
+    
 }
 .mineUser .imageCont{
-    display: inline;
     width: 200px;
     margin: 5px;
+    float: left;
 }
 .mineUser .panel-footer.card-footer input{
     color: #fff;
@@ -38,7 +39,7 @@ body{
     display: none;
 }
 .mineUser .ocean .block h3{
-    margin: 25px 0 0 0;
+    margin: 25px 0;
 }
 .mineUser .clear{clear: both;}
 
@@ -55,7 +56,7 @@ body{
 }
 .ocean .oceanIntro{
    padding: 40px 0 0 15px;
-    width: 40%;
+    
 }
 .mineUser .quotes{
     font-style: italic;
@@ -82,3 +83,36 @@ body{
 .open h5 span{font-weight: bold;}
 .open h4, .open h5{text-align: center;}
 .noshow{display: none;}
+.bottom{margin-bottom: 75px;}
+
+
+
+@media (max-width: 768px) { 
+.mineUser .btn {
+    height: 85px;
+    width: 95px;
+    white-space: normal;
+}
+    .open{
+        height: 300px;
+    }
+    .mineUser .imageCont img {
+    width: 150px;
+    height: 125px;
+    margin: 5px 0;
+}
+    .mineUser .imageCont {
+    width: 45%;
+    margin: 5px;
+    float: left;
+}
+}
+@media (max-width: 424px) { 
+    .open{
+        width: 90%;
+    }
+    .mineUser .block{
+        width: 100%;
+        height: auto;
+    }
+}
