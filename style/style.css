@@ -11,7 +11,18 @@ body{
    height:100%;
     position: relative;
 }
-
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #337ab7;
+    color: white;
+    text-align: center;
+}
+footer .psmall{
+    font-size: 10px;
+}
 .container.mineUser{ padding: 50px 15px;}
 
 .mineUser .sv_qstn div h5{

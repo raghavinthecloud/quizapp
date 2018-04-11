@@ -12,6 +12,7 @@ function printResult(results){
     makechart(i.data,i.dataO,i.dataC,i.dataE,i.dataA,i.dataN);
    
     document.getElementById("ocean").style.display = "block";
+    document.getElementById("citation").style.display = "block";
  
     console.log(results);
     return "result: " + JSON.stringify(results);
@@ -186,7 +187,7 @@ getChartData = function(result){
         document.getElementById("balanced_image").style.display = "block";
         $('#Target_Images').css("height","100x");
         $('#Target_Text').css("height","100px");
-        
+       
 
     }
     
