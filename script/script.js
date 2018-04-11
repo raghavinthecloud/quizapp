@@ -184,6 +184,10 @@ getChartData = function(result){
     if (balance == 5){
         document.getElementById("balanced_quote").style.display = "block";
         document.getElementById("balanced_image").style.display = "block";
+        $('#Target_Images').css("height","100x");
+        $('#Target_Text').css("height","100px");
+        
+
     }
     
     data = {
