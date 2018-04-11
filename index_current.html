@@ -32,7 +32,26 @@
 
 </head>
 
+
 <body>
+    <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -40,14 +59,20 @@
                 <a class="navbar-brand" href="http://iworkslab.com/">Personality Test</a>
             </div>
             
-            <!--/.nav-collapse -->
+           
         </div>
     </nav>
 
 
     <div class="container mineUser">
+       
 
         <div id="surveyTitle"> <h1>What drives you to make decisions?</h1></div>
+         <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fiworkslab.com%2F&layout=button&size=small&mobile_iframe=true&appId=166014830783203&width=59&height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+         <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=See%20what%20drives%20to%20make%20decisions%?">
+Tweet</a>
+
         
         <div id="surveyElement"></div>
 
@@ -279,8 +304,7 @@
                 <p class="noshow quotes" id="balanced_image">Our quiz shows that you have a well balanced personality and we cannot determine which images you would appeal to you.</p>                                  
             </div>
         </div> 
-        <div class="clear"></div>
-          
+        <div class="clear">          
         </div>
         <div id="citation" class="noshow"> 
         <p>This personality quiz uses the <a href="https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/">Ten Item Personality Inventory (TIPI)</a> by Gosling, S. D., Rentfrow, P. J., & Swann, W. B., Jr. (2003). A Very Brief Measure of the Big Five Personality Domains. Journal of Research in Personality, 37, 504-528.</p>

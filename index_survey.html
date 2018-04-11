@@ -51,7 +51,9 @@
         
         <div id="surveyElement"></div>
 
-        <div id="surveyResult" class="surveyResult">
+    <div id ="results">    
+     
+<div id="surveyResult" class="surveyResult">
             <h4>From the way you answered the questions, you have the following traits.</h4>
 
             <div class="open">
@@ -120,7 +122,7 @@
                 You adapt and can be warm as well as critical.
 
             </h5>
-        </div>
+            </div>
             <div class="open">
             <h4>Neuroticism</h4>
             <h5><span style="color:#14def3">Calm</span> vs <span style="color:#000ff0">Anxious</span></h5>
@@ -136,113 +138,29 @@
                 You stay calm at times but are also likely to stress out at other times.
 
             </h5>
-        </div>
+            </div>
             <div class="clear"></div>
         </div>
+              <div class="ocean" id="ocean">
+            <h3 class="oceanIntro">Based on these personality profiles, users can be targeted. Specific types of wording and imagery are selected to resonate with them and may even lead them to make certain decisions.
+            </h3>
+
      
-<!--
-        <div class ="noshow" id="overall_chart">
-            <p>Looking at the big picture, you have the five personality attributes can be found in the following proportions.</p>
-            <div class="chart block"><canvas id="myChart" width="200" height="200"></canvas></div>
-        </div>
--->
-
-        <div class="ocean" id="ocean">
-        <h3 class="oceanIntro">Based on these personality profiles, users can be targeted. Specific types of wording and imagery are selected to resonate with them and may even lead them to make certain decisions.
-        </h3>
-<!--
-            <div class="block" id="Openness">
-                <h3>Openness:</h3>
-                <p>Extent to which a person is open to experiencing a variety of activities.
-
-                    Openness to experience describes a dimension of personality that distinguishes imaginative, creative people from down-to-earth, conventional people. </p><p>Images similar to the following appeal to people who have high openness.
-                </p>
-                <P class="quotes">“Try our new..”<br/>“Unleash your creative side..”</P>
-                <div class="dispImg">
-                    <div class="imageCont">
-                        <img src="images/openness/jeshoots-com-357165-unsplash.jpg">
-                    </div>
-                    <div class="imageCont"><img src="images/openness/colorful-cream-cakes-pastries-sweet-food-2K-wallpaper-middle-size.jpg"></div>
-                    <div class="imageCont"><img src="images/openness/kids-piano-lessons.jpg"></div>
-                    <div class="imageCont"><img src="images/openness/rawpixel-com-315196-unsplash.jpg"></div>
-                    
-                </div>
+            <div class="block" id="Target_Text">
+                <h4>Messages or text you are likely to respond to </h4>
+                <P class="quotes noshow" id="Creative_quote">“ Try our new...”</P>
+                <P class="quotes noshow" id="Conventional_quote">“ Our traditional...”</P>
+                <P class="quotes noshow" id="Dependable_quote">“ Stay organized...”</P>
+                <P class="quotes noshow" id="Reserved_quote">“ Get custom...”</P>
+                <P class="quotes noshow" id="Extroverted_quote">“ Check our exciting...”</P>
+                <P class="quotes noshow" id="Critical_quote">“ Learn about our...”</P>
+                <P class="quotes noshow" id="Careless_quote">“ Try our new...”</P>
+                <P class="quotes noshow" id="Warm_quote">“ Stay in touch with...”</P>
+                <P class="quotes noshow" id="Calm_quote">“ Get our...”</P>
+                <P class="quotes noshow" id="Anxious_quote">“ Stay Safe and secure with ...”</P>
+                <p class="quotes noshow" id="balanced_quote">Our quiz shows that you have a well balanced personality and we cannot determine which messages or text you would respond to.</p>
             </div>
-            <div class="block" id="Conscientiousness">
-                <h3>Conscientiousness:</h3>
-                <p>Conscientiousness concerns the way in which we control, regulate, and direct our impulses. Person’s tendency to act in an organized or thoughtful way. </p><p>Images similar to the following appeal to people who have high conscientiousness.
-                </p>
-                <P class="quotes">“become more effecient..”<br/>“make work better..”</P>
-                <div class="dispImg">
-                    <div class="imageCont">
-                        <img src="images/conscientousness/olu-eletu-13086-unsplash.jpg">
-                    </div>
-                    <div class="imageCont"><img src="images/conscientousness/man-looks-out-window-1507334.jpg"></div>
-                    <div class="imageCont"><img src="images/conscientousness/maria-1516918.jpg"></div>
-                    <div class="imageCont"><img src="images/conscientousness/estee-janssens-396889-unsplash.jpg"></div>
-                </div>
-            </div>
-            <div class="block" id="Agreeableness">
-                <h3>Agreeableness:</h3>
-                <p>Agreeableness reflects individual differences in concern with cooperation and social harmony. Person’s tendency to be compassionate and cooperative toward others.</p><p> Images similar to the following appeal to people who have high Agreeableness.
-                </p>
-                <P class="quotes">“Spend time with your family”<br/>“..needs your care”</P>
-                <div class="dispImg">
-                    <div class="imageCont">
-                        <img src="images/agreeableness/favorite-cousins-1-1436461.jpg">
-                    </div>
-                    <div class="imageCont"><img src="images/agreeableness/dolphins-1362278.jpg"></div>
-                    <div class="imageCont"><img src="images/agreeableness/girl-with-puppy-1410159.jpg"></div>
-                    <div class="imageCont"><img src="images/agreeableness/holding-hands-1241442.jpg"></div>
-                </div>
-            </div>
-            <div class="block" id="Neuroticism">
-                <h3>Neuroticism:</h3>
-                <p>Neuroticism refers to the tendency to experience negative emotions. Person’s emotions are sensitive to the individual’s environment. </p><p>Images similar to the following appeal to people who have high Neuroticism.
-                </p>
-                <P class="quotes">“Protect your family..”<br/>“burglary”</P>
-                <div class="dispImg">
-                    <div class="imageCont">
-                        <img src="images/neuroticism/20150627_8376_1800x1200.jpg">
-                    </div>
-                    <div class="imageCont"><img src="images/neuroticism/Ad-Clutter-Times-Square-NYC-small.jpg"></div>
-                    <div class="imageCont"><img src="images/neuroticism/blue-1-1189569.jpg"></div>
-                    <div class="imageCont"><img src="images/neuroticism/home-office-desk-1240238.jpg"></div>
-                </div>
-            </div>
-            <div class="block" id="Extraversion">
-                <h3>Extraversion:</h3>
-
-                <p>Extraversion refers to the extent to which we enjoy company, and seek excitement and stimulation</p>
-                <P class="quotes">“Make this summer sensational”<br/>“win a trip..”</P>
-
-                <div class="dispImg">
-                    <div class="imageCont">
-                        <img src="images/extrovert/4-for-friendship-1433074.jpg">
-                    </div>
-                    <div class="imageCont"><img src="images/extrovert/324349703-tasse-a-the-coffee-shop-cafe-dejeuner-boissons-chaudes.jpg"></div>
-                    <div class="imageCont"><img src="images/extrovert/amsterdam-queensday-1437123.jpg"></div>
-                    <div class="imageCont"><img src="images/extrovert/my-world-1578241.jpg"></div>
-                </div>
-            </div>
-        -->
-         
-  
-        <div class="block" id="Target_Text">
-            <h4>Messages or text you are likely to respond to </h4>
-            <P class="quotes noshow" id="Creative_quote">“ Try our new...”</P>
-            <P class="quotes noshow" id="Conventional_quote">“ Our traditional...”</P>
-            <P class="quotes noshow" id="Dependable_quote">“ Stay organized...”</P>
-            <P class="quotes noshow" id="Reserved_quote">“ Get custom...”</P>
-            <P class="quotes noshow" id="Extroverted_quote">“ Check our exciting...”</P>
-            <P class="quotes noshow" id="Critical_quote">“ Learn about our...”</P>
-            <P class="quotes noshow" id="Careless_quote">“ Try our new...”</P>
-            <P class="quotes noshow" id="Warm_quote">“ Stay in touch with...”</P>
-            <P class="quotes noshow" id="Calm_quote">“ Get our...”</P>
-            <P class="quotes noshow" id="Anxious_quote">“ Stay Safe and secure with ...”</P>
-            <p class="quotes noshow" id="balanced_quote">Our quiz shows that you have a well balanced personality and we cannot determine which messages or text you would respond to.</p>
-        </div>
-        <div class ="block" id="Target_Images">
+            <div class ="block" id="Target_Images">
             <h4>Images that you might positively relate to:</h4>
             <div class="dispImg">
                 <div class="imageCont noshow"id="Creative_image">
@@ -278,26 +196,26 @@
                 <div class="clear"></div>
                 <p class="noshow quotes" id="balanced_image">Our quiz shows that you have a well balanced personality and we cannot determine which images you would appeal to you.</p>                                  
             </div>
-        </div> 
-        <div class="clear"></div>
-          
-        </div>
-        <div id="citation" class="noshow"> 
-        <p>This personality quiz uses the <a href="https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/">Ten Item Personality Inventory (TIPI)</a> by Gosling, S. D., Rentfrow, P. J., & Swann, W. B., Jr. (2003). A Very Brief Measure of the Big Five Personality Domains. Journal of Research in Personality, 37, 504-528.</p>
-        <p>Suggested Images and text responses are based on <br>
-            1.‘Who Likes What and, Why?’ Insights into Modeling Users’ Personality Based on Image ‘Likes’ by Sharath Chandra Guntuku , Joey Tianyi Zhou, Sujoy Roy, Member, Weisi Lin, and Ivor W. Tsang. IEEE TRANSACTIONS ON AFFECTIVE COMPUTING, VOL. 9, NO. 1, January-March 2018<br> 2. Targeting Consumers by Personality Types, statsocial. IBM research<br>3. Personalized Persuasion: Tailoring Persuasive Appeals to Recipients’ Personality Traits by  Jacob B. Hirsh , Sonia K. Kang , and Galen V. Bodenhausen.  Association for psychological science, Sage publications, Volume: 23 issue: 6, page(s): 578-581
-       </div>
-        <footer class="footer">
+            </div> 
+            <div class="clear">          
+            </div>
+            <div id="citation" class="noshow"> 
+                <p>This personality quiz uses the <a href="https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/">Ten Item Personality Inventory (TIPI)</a> by Gosling, S. D., Rentfrow, P. J., & Swann, W. B., Jr. (2003). A Very Brief Measure of the Big Five Personality Domains. Journal of Research in Personality, 37, 504-528.</p>
+                <p>Suggested Images and text responses are based on <br>
+                    1.‘Who Likes What and, Why?’ Insights into Modeling Users’ Personality Based on Image ‘Likes’ by Sharath Chandra Guntuku , Joey Tianyi Zhou, Sujoy Roy, Member, Weisi Lin, and Ivor W. Tsang. IEEE TRANSACTIONS ON AFFECTIVE COMPUTING, VOL. 9, NO. 1, January-March 2018<br> 2. Targeting Consumers by Personality Types, statsocial. IBM research<br>3. Personalized Persuasion: Tailoring Persuasive Appeals to Recipients’ Personality Traits by  Jacob B. Hirsh , Sonia K. Kang , and Galen V. Bodenhausen.  Association for psychological science, Sage publications, Volume: 23 issue: 6, page(s): 578-581</p>
+           </div>     
+
+    </div>
+</div>
+<!-- /.container -->
+ <footer class="footer">
   <p class="psmall">Created by the InnovationWorks (iWorks) Lab in the College of Information Studies at the University of Maryland College Park by Dr. Timothy C. Summers, Vinita Atre and Raghav Karkera. Contact us at <a href="https://www.howhackersthink.org" style="color:#00ffff">howhackersthink.org</a></p>
  
 </footer>
 
-    </div>
-<!-- /.container -->
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="script/script.js"></script>
+<script src="script/script3.js"></script>
 
 </body>
 
